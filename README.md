@@ -47,4 +47,5 @@ Note: It gives 'Published'
 Finally, open the above link in browser.
 
 Acknowledgments
+
 Inspiration from Traversy Media
