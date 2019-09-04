@@ -38,7 +38,7 @@
     height: 100vh;
     overflow: hidden; }
   .menu-branding {
-    background: #444;
+    background: #080808;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -52,7 +52,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: black;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -94,7 +94,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #080808;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -111,14 +111,15 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.9);
+      background: rgba(8, 8, 8, 0.9);
       z-index: -1; }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: 'Gayathri', sans-serif; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
@@ -128,7 +129,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(13, 13, 13, 0.5); }
 
 a {
   color: #fff;
@@ -144,6 +145,7 @@ header {
 
 main {
   padding: 4rem;
+  height: 100%;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -159,9 +161,13 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-gap: 0.7rem;
+  grid-template-areas: 'profile1 profile2 profile3' 'bioimage bio bio' 'education education education' 'school1 school2 school3' 'experience experience experience' 'job1 job2 job3' 'skills skills skills' 'skill1 skill2 skill3' 'skill4 skill5 skill6' 'skill7 skill8 skill9';
   grid-template-columns: repeat(3, 1fr); }
+  .about-info .profile {
+    grid-area: profile2;
+    font-size: 1rem;
+    padding: 0.5rem; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -169,9 +175,27 @@ main {
     border: #eece1a 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1rem;
+    background: #151515;
+    padding: 0.5rem; }
+  .about-info .education {
+    grid-area: education;
+    font-size: 1rem;
+    padding-top: 2rem; }
+  .about-info .school {
+    background: #151515;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid; }
+  .about-info .school-1 {
+    grid-area: school1; }
+  .about-info .school-2 {
+    grid-area: school2; }
+  .about-info .experience {
+    grid-area: experience;
+    font-size: 1rem;
+    padding-top: 2rem; }
   .about-info .job {
-    background: #515151;
+    background: #151515;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
   .about-info .job-1 {
@@ -180,10 +204,36 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .skills {
+    grid-area: skills;
+    font-size: 1rem;
+    padding-top: 2rem; }
+  .about-info .skill {
+    background: #151515;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid; }
+  .about-info .skill-1 {
+    grid-area: skill1; }
+  .about-info .skill-2 {
+    grid-area: skill2; }
+  .about-info .skill-3 {
+    grid-area: skill3; }
+  .about-info .skill-4 {
+    grid-area: skill4; }
+  .about-info .skill-5 {
+    grid-area: skill5; }
+  .about-info .skill-6 {
+    grid-area: skill6; }
+  .about-info .skill-7 {
+    grid-area: skill7; }
+  .about-info .skill-8 {
+    grid-area: skill8; }
+  .about-info .skill-9 {
+    grid-area: skill9; }
 
 .projects {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
@@ -226,19 +276,19 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #888888;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: black;
   color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -263,25 +313,52 @@ main {
     ul.menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    height: 30vh;
+    height: 45vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px; }
   .menu-nav {
-    height: 70vh;
+    height: 55vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 20px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'profile2' 'bio' 'education' 'school1' 'school2' 'school3' 'experience' 'job1' 'job2' 'job3' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'skill7' 'skill8' 'skill9';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh;
-    font-size: 2rem; }
+  div.menu-branding,
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    div.menu-branding.show,
+    ul.menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait_smallest.jpg");
+      width: 80px;
+      height: 80px; }
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0); }
+  .nav-item .nav-link {
+    display: inline;
+    font-size: 25px; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 2rem !important; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    font-size: 1rem; } }
