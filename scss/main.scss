@@ -84,6 +84,7 @@ main {
     display: grid;
     grid-gap: 0.7rem;
     grid-template-areas:
+        'profile1 profile2 profile3'
         'bioimage bio bio'
         'education education education'
         'school1 school2 school3'
@@ -94,6 +95,12 @@ main {
         'skill4 skill5 skill6'
         'skill7 skill8 skill9';
     grid-template-columns: repeat(3, 1fr);
+
+    .profile {
+        grid-area: profile2;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 
     .bio-image {
         grid-area: bioimage;
@@ -111,9 +118,8 @@ main {
 
     .education {
         grid-area: education;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-top: 2rem;
-
     }
 
     .school {
@@ -132,7 +138,7 @@ main {
 
     .experience {
         grid-area: experience;
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding-top: 2rem;
     }
 
@@ -156,7 +162,7 @@ main {
 
     .skills {
         grid-area: skills;
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding-top: 2rem;
     }
 

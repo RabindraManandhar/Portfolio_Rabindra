@@ -162,8 +162,12 @@ main {
 .about-info {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-areas: 'bioimage bio bio' 'education education education' 'school1 school2 school3' 'experience experience experience' 'job1 job2 job3' 'skills skills skills' 'skill1 skill2 skill3' 'skill4 skill5 skill6' 'skill7 skill8 skill9';
+  grid-template-areas: 'profile1 profile2 profile3' 'bioimage bio bio' 'education education education' 'school1 school2 school3' 'experience experience experience' 'job1 job2 job3' 'skills skills skills' 'skill1 skill2 skill3' 'skill4 skill5 skill6' 'skill7 skill8 skill9';
   grid-template-columns: repeat(3, 1fr); }
+  .about-info .profile {
+    grid-area: profile2;
+    font-size: 1rem;
+    padding: 0.5rem; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -176,7 +180,7 @@ main {
     padding: 0.5rem; }
   .about-info .education {
     grid-area: education;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-top: 2rem; }
   .about-info .school {
     background: #151515;
@@ -188,7 +192,7 @@ main {
     grid-area: school2; }
   .about-info .experience {
     grid-area: experience;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-top: 2rem; }
   .about-info .job {
     background: #151515;
@@ -202,7 +206,7 @@ main {
     grid-area: job3; }
   .about-info .skills {
     grid-area: skills;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-top: 2rem; }
   .about-info .skill {
     background: #151515;
@@ -320,7 +324,7 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 20px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'education' 'school1' 'school2' 'school3' 'experience' 'job1' 'job2' 'job3' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'skill7' 'skill8' 'skill9';
+    grid-template-areas: 'bioimage' 'profile2' 'bio' 'education' 'school1' 'school2' 'school3' 'experience' 'job1' 'job2' 'job3' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'skill7' 'skill8' 'skill9';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
