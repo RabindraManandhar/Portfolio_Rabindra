@@ -1,7 +1,7 @@
 // Widescreens
 @include mediaXl {
     .projects {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -41,7 +41,7 @@
     }
 
     .menu-branding {
-        height: 30vh;
+        height: 45vh;
         transform: translate3d(100%, 0, 0);
 
         .portrait {
@@ -52,7 +52,7 @@
     }
 
     .menu-nav {
-        height: 70vh;
+        height: 55vh;
         transform: translate3d(-100%, 0, 0);
         font-size: 20px;
     }
@@ -90,6 +90,39 @@
 
 // Smartphones
 @include mediaSm {
+
+    div.menu-branding,
+    ul.menu-nav {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .menu-branding {
+        height: 30vh;
+        transform: translate3d(100%, 0, 0);
+
+        .portrait {
+            background: url('../img/portrait_smallest.jpg');
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .menu-nav {
+        height: 70vh;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    .nav-item .nav-link {
+        display: inline;
+        font-size: 25px;
+    }
+
     main {
         padding: 2rem;
 
@@ -105,5 +138,10 @@
 
     .projects {
         grid-template-columns: 1fr;
+    }
+
+
+    .boxes div {
+        font-size: 1rem;
     }
 }

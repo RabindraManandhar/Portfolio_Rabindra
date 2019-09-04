@@ -32,3 +32,16 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+// // for slide - left -in animation
+// window.addEventListener('load', function (event) {
+//     let slidingElement = document.getElementById("initial-slide-left-in");
+//     slidingElement.className += " slideOutRight slower";
+
+//     setTimeout(function () {
+//         slidingElement.classList.remove("slideOutRight");
+//         slidingElement.style.display = "none";
+//     }, 3000);
+// });
+
+
