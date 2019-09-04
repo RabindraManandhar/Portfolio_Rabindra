@@ -23,6 +23,7 @@ h2,
 h3 {
     margin: 0;
     font-weight: 400;
+    font-family: 'Gayathri', sans-serif;
 
     &.lg-heading {
         font-size: 6rem;
@@ -52,7 +53,7 @@ header {
 
 main {
     padding: 4rem;
-    // height: 100%;
+    height: 100%;
     min-height: calc(100vh - 60px);
 
     .icons {
@@ -77,14 +78,21 @@ main {
     }
 }
 
-
+//About Me
 
 .about-info {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 0.7rem;
     grid-template-areas:
         'bioimage bio bio'
-        'job1 job2 job3';
+        'education education education'
+        'school1 school2 school3'
+        'experience experience experience'
+        'job1 job2 job3'
+        'skills skills skills'
+        'skill1 skill2 skill3'
+        'skill4 skill5 skill6'
+        'skill7 skill8 skill9';
     grid-template-columns: repeat(3, 1fr);
 
     .bio-image {
@@ -96,7 +104,36 @@ main {
 
     .bio {
         grid-area: bio;
+        font-size: 1rem;
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+    }
+
+    .education {
+        grid-area: education;
         font-size: 1.5rem;
+        padding-top: 2rem;
+
+    }
+
+    .school {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+
+    .school-1 {
+        grid-area: school1;
+    }
+
+    .school-2 {
+        grid-area: school2;
+    }
+
+    .experience {
+        grid-area: experience;
+        font-size: 1.25rem;
+        padding-top: 2rem;
     }
 
     .job {
@@ -116,6 +153,54 @@ main {
     .job-3 {
         grid-area: job3
     }
+
+    .skills {
+        grid-area: skills;
+        font-size: 1.25rem;
+        padding-top: 2rem;
+    }
+
+    .skill {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+
+    .skill-1 {
+        grid-area: skill1
+    }
+
+    .skill-2 {
+        grid-area: skill2
+    }
+
+    .skill-3 {
+        grid-area: skill3
+    }
+
+    .skill-4 {
+        grid-area: skill4
+    }
+
+    .skill-5 {
+        grid-area: skill5
+    }
+
+    .skill-6 {
+        grid-area: skill6
+    }
+
+    .skill-7 {
+        grid-area: skill7
+    }
+
+    .skill-8 {
+        grid-area: skill8
+    }
+
+    .skill-9 {
+        grid-area: skill9
+    }
 }
 
 
@@ -123,7 +208,7 @@ main {
 // Work/Projects
 .projects {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
 
     img {
@@ -200,5 +285,6 @@ main {
     color: set-text-color($primary-color);
     height: 60px;
 }
+
 
 @import 'mobile';
