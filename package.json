@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive portfolio website",
   "main": "index.js",
-  "homepage": "http://RabindraManandhar.github.io/Portfolio_Rabindra",
+  "homepage": "https://rabindramanandhar.github.io/Portfolio_Rabindra/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
