@@ -15,7 +15,7 @@ npm install node-sass
 After installing node-sass, change the script in package.json as below:
 "Scripts": {
 	"sass": "node-sass -w scss/ -o dist/css/ --recursive"
-
+	}
 Then,
 npm run sass
 
