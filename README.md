@@ -18,12 +18,8 @@ After installing node-sass, change the script in package.json as below:
 "sass": "node-sass -w scss/ -o dist/css/ --recursive"
 }
 
-=======
-"Scripts": "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-
-> > > > > > > 773f7197200e02c435777cdee3eec033492579a2
-> > > > > > > Then,
-> > > > > > > npm run sass
+Then,
+npm run sass
 
 Getting Started
 
