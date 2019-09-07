@@ -8,7 +8,9 @@ First of all, it is necessary to install package.json file. npm init
 
 SASS is used in this portfolio. Hence, it is very important to install it before getting started. npm install node-sass
 
-After installing node-sass, change the script in package.json as below: "Scripts": { "sass": "node-sass -w scss/ -o dist/css/ --recursive" }
+After installing node-sass, change the script in package.json as below:
+
+"Scripts": { "sass": "node-sass -w scss/ -o dist/css/ --recursive" }
 
 Then, npm run sass
 
@@ -20,9 +22,13 @@ Deployment in Github Pages
 
 First, install github pages npm i gh-pages
 
-After this, add the followings in package.json file "homepage": "https://RabindraManandhar.github.io/Portfolio_Rabindra" Note: This is respective github page link of project.
+After this, add the followings in package.json file
 
-"scripts": { "deploy":"gh-pages -d dist"
+"homepage": "https://RabindraManandhar.github.io/Portfolio_Rabindra"
+
+Note: This is respective github page link of project.
+
+"scripts": { "deploy":"gh-pages -d dist" }
 
 Note: -d dist refer to the directory of project
 
